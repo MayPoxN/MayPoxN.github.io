@@ -103,6 +103,6 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:/MayPoxN/MayPoxN.github.io.git
+  repo: https://github.com/MayPoxN/MayPoxN.github.io
   # 分支User Pages是master  Project Pages是gh-dev
   branch: master

@@ -4,7 +4,8 @@ Nothing to say, and respect to [GitHub+Hexo+NexT](https://www.jianshu.com/p/7b57
 
 # NexT主题
 
-[NexT ](http://theme-next.iissnan.com/)官网也有详细的步骤，文档也很详细，按照文档一步一步的设置一些基本和常用功能。
+[NexT ](http://theme-next.iissnan.com/)官网也有详细的步骤，文档也很详细，按照文档一步一步的设置一些基本和常用功能。  
+
 网址：[http://theme-next.iissnan.com/getting-started.html](http://theme-next.iissnan.com/)
 
 # Hexo

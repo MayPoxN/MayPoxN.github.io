@@ -8,9 +8,21 @@
       <link href="/2022/02/25/Miscellaneous-talk-About-the-Way-of-Setting-up-BLOG/"/>
       <url>/2022/02/25/Miscellaneous-talk-About-the-Way-of-Setting-up-BLOG/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><p>你所来到的博客是基于 <a href="https://pages.github.com/">Github Pages</a> and <a href="https://hexo.io/">Hexo</a> 这些套件搭建的，并且使用了 <a href="https://github.com/Molunerfinn/hexo-theme-melody">Melody</a> 主题。</p><p>在这篇文章中，你可能遇到以下问题：</p><ul><li>what the <del><em>fxxk</em></del> is this？</li><li>what is github？</li><li>why I got 404 while I get access to github pages？</li><li>what is ssh？</li><li>what is node.js？</li><li>what is hexo？</li><li>how to use cmd or powershell？</li><li>ohhh, I got a <del><em>fxxking</em></del> mistake and don’t konw how I fix itself？</li></ul><p><del>这些的问题我相信你可以自己解决ok？</del></p><h1 id="Chapter-One"><a href="#Chapter-One" class="headerlink" title="Chapter One"></a>Chapter One</h1><p><strong><del>COMING SOON</del></strong></p><h1 id="Epilogue"><a href="#Epilogue" class="headerlink" title="Epilogue"></a>Epilogue</h1><p>如果你看到这句话的时候，还没有搭建完成你自己的BLOG，亦或者你马上要考研参加工作了，请你立马放弃。</p><p>因为你没有足够的时间、没有足够的精力、没有足够的人生去做这些事。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BLOG </tag>
+            
+        </tags>
       
     </entry>
     
@@ -27,8 +39,6 @@
       <categories>
           
           <category> 毕设 </category>
-          
-          <category> 开题报告 </category>
           
       </categories>
       

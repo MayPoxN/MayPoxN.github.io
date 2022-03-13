@@ -21,9 +21,21 @@
       <link href="/2022/03/11/Some-C-C-Explain-At-an-Oral-Quiz/"/>
       <url>/2022/03/11/Some-C-C-Explain-At-an-Oral-Quiz/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="一、虚函数的数据结构及工作原理"><a href="#一、虚函数的数据结构及工作原理" class="headerlink" title="一、虚函数的数据结构及工作原理"></a>一、虚函数的数据结构及工作原理</h1><h1 id="二、CONST-同-DEFINE-的区别"><a href="#二、CONST-同-DEFINE-的区别" class="headerlink" title="二、CONST 同 DEFINE 的区别"></a>二、CONST 同 DEFINE 的区别</h1><h1 id="三、指针与引用"><a href="#三、指针与引用" class="headerlink" title="三、指针与引用"></a>三、指针与引用</h1><h1 id="四、指针与数据"><a href="#四、指针与数据" class="headerlink" title="四、指针与数据"></a>四、指针与数据</h1><h1 id="五、不用额外空间实现变量交换"><a href="#五、不用额外空间实现变量交换" class="headerlink" title="五、不用额外空间实现变量交换"></a>五、不用额外空间实现变量交换</h1><h1 id="六、函数指针与指针函数"><a href="#六、函数指针与指针函数" class="headerlink" title="六、函数指针与指针函数"></a>六、函数指针与指针函数</h1><h1 id="七、C-源文件文本到可执行文件的过程"><a href="#七、C-源文件文本到可执行文件的过程" class="headerlink" title="七、C++ 源文件文本到可执行文件的过程"></a>七、C++ 源文件文本到可执行文件的过程</h1><h1 id="八、C-11-新特性"><a href="#八、C-11-新特性" class="headerlink" title="八、C++11 新特性"></a>八、C++11 新特性</h1><h1 id="九、C-与-C-的区别"><a href="#九、C-与-C-的区别" class="headerlink" title="九、C++ 与 C 的区别"></a>九、C++ 与 C 的区别</h1><h1 id="十、malloc-原理"><a href="#十、malloc-原理" class="headerlink" title="十、malloc 原理"></a>十、malloc 原理</h1><h1 id="十一、内存泄漏、野指针"><a href="#十一、内存泄漏、野指针" class="headerlink" title="十一、内存泄漏、野指针"></a>十一、内存泄漏、野指针</h1><h1 id="十二、STATIC"><a href="#十二、STATIC" class="headerlink" title="十二、STATIC"></a>十二、STATIC</h1><h1 id="十三、UNION-与-STRUCT"><a href="#十三、UNION-与-STRUCT" class="headerlink" title="十三、UNION 与 STRUCT"></a>十三、UNION 与 STRUCT</h1><h1 id="十四、new-与-malloc"><a href="#十四、new-与-malloc" class="headerlink" title="十四、new 与 malloc"></a>十四、new 与 malloc</h1><h1 id="十五、C-类型转换"><a href="#十五、C-类型转换" class="headerlink" title="十五、C++ 类型转换"></a>十五、C++ 类型转换</h1><h1 id="十六、面向对象"><a href="#十六、面向对象" class="headerlink" title="十六、面向对象"></a>十六、面向对象</h1><h1 id="十七、前置与后置"><a href="#十七、前置与后置" class="headerlink" title="十七、前置与后置"></a>十七、前置与后置</h1><h1 id="十八、静态库和动态库"><a href="#十八、静态库和动态库" class="headerlink" title="十八、静态库和动态库"></a>十八、静态库和动态库</h1><h1 id="十九、STRUCT-内存大小的确定"><a href="#十九、STRUCT-内存大小的确定" class="headerlink" title="十九、STRUCT 内存大小的确定"></a>十九、STRUCT 内存大小的确定</h1><h1 id="二十、strlen-与strcpy"><a href="#二十、strlen-与strcpy" class="headerlink" title="二十、strlen()与strcpy()"></a>二十、strlen()与strcpy()</h1><h1 id="二十一、memcpy-与memset"><a href="#二十一、memcpy-与memset" class="headerlink" title="二十一、memcpy()与memset()"></a>二十一、memcpy()与memset()</h1><h1 id="二十二、C-x2F-C-内存管理与分配"><a href="#二十二、C-x2F-C-内存管理与分配" class="headerlink" title="二十二、C&#x2F;C++ 内存管理与分配"></a>二十二、C&#x2F;C++ 内存管理与分配</h1><h1 id="二十三、深拷贝与浅拷贝"><a href="#二十三、深拷贝与浅拷贝" class="headerlink" title="二十三、深拷贝与浅拷贝"></a>二十三、深拷贝与浅拷贝</h1><h1 id="二十四、debug-与-release"><a href="#二十四、debug-与-release" class="headerlink" title="二十四、debug 与 release"></a>二十四、debug 与 release</h1><h1 id="二十五、MAIN-的返回值"><a href="#二十五、MAIN-的返回值" class="headerlink" title="二十五、MAIN 的返回值"></a>二十五、MAIN 的返回值</h1><h1 id="二十六、C-动态链接库与-C-动态链接库"><a href="#二十六、C-动态链接库与-C-动态链接库" class="headerlink" title="二十六、C++ 动态链接库与 C 动态链接库"></a>二十六、C++ 动态链接库与 C 动态链接库</h1><h1 id="二十七、结构体"><a href="#二十七、结构体" class="headerlink" title="二十七、结构体"></a>二十七、结构体</h1><h1 id="二十八、拷贝构造函数为什么传递引用"><a href="#二十八、拷贝构造函数为什么传递引用" class="headerlink" title="二十八、拷贝构造函数为什么传递引用"></a>二十八、拷贝构造函数为什么传递引用</h1><h1 id="二十九、程序崩溃原因"><a href="#二十九、程序崩溃原因" class="headerlink" title="二十九、程序崩溃原因"></a>二十九、程序崩溃原因</h1><h1 id="三十、C-字符串输入"><a href="#三十、C-字符串输入" class="headerlink" title="三十、C++ 字符串输入"></a>三十、C++ 字符串输入</h1><h1 id="三十一、LAMBDA-表达式"><a href="#三十一、LAMBDA-表达式" class="headerlink" title="三十一、LAMBDA 表达式"></a>三十一、LAMBDA 表达式</h1>]]></content>
       
       
+      <categories>
+          
+          <category> 小知识 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C/C++ </tag>
+            
+        </tags>
       
     </entry>
     

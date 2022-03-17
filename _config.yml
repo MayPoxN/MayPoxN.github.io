@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Nefelibata
+title: NefelibataのBLOG
 subtitle: ''
 description: "In the past, Such as yesterday's Death In the future, Such as today's Life."
 keywords:
@@ -107,3 +107,20 @@ deploy:
   repo: https://github.com/MayPoxN/MayPoxN.github.io
   # 分支User Pages是master  Project Pages是gh-dev
   branch: master
+
+search:
+ path: search.xml
+ field: post
+ content: true
+
+# 文章加密
+encrypt:
+  enable: true
+  abstract: This is an encrypted article and the content is too advanced to be disclosed.
+  message: If you are yearned to get access to this essay, please entry cipher. (PS you can try with "Nefelibata")
+
+# hexo-admin authentification
+admin:
+  username: Nefelibata
+  password_hash: $2a$10$/jFaqDxy971UPPUFH3xUhO1Ms5sNzCnuJC2R8aMwBw4MegRiz0XXG
+  secret: root

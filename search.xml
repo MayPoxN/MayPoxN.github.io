@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Microsoft News Recommendation Competition Leading by Fangzhao Wu</title>
+      <link href="/2022/03/24/Microsoft-News-Recommendation-Competition-Leading-by-Fangzhao-Wu/"/>
+      <url>/2022/03/24/Microsoft-News-Recommendation-Competition-Leading-by-Fangzhao-Wu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="组会1——2022-x2F-03-x2F-24"><a href="#组会1——2022-x2F-03-x2F-24" class="headerlink" title="组会1——2022&#x2F;03&#x2F;24"></a>组会1——2022&#x2F;03&#x2F;24</h1><p>吴方照老师带领的推荐系统比赛 <a href="https://msnews.github.io/">MIND</a> 。</p><p>MIND数据集开源了、也有很多论文、有很多开源代码。</p><p>我们主要推荐 item，可能是视频，音乐，商品等等。</p><p>根据人预测我们会需要什么，从而进行推荐。因此不用搜索，匹配item和人。</p><p>例如人和新闻、人和视频、人和商品。</p><p>系统会决定哪些东西你能看到、哪些东西你优先看到。推荐系统权力也很大，会对社会产生影响。并非用户点的更多更好。</p><p>实现人和新闻的匹配。</p><ol><li>知道人是什么样的人。<ul><li>他喜欢什么</li><li>他有什么兴趣</li><li>他的特征</li></ul></li><li>要知道待推荐的是什么。<ul><li>对 item 的分类</li><li>NLP 语义理解</li><li>item 之间的匹配</li></ul></li><li>算法搜寻用户信息。<ul><li>用 vector 表示</li><li>内容也是 vector</li></ul></li></ol><p>可以在 MIND 看一下推荐系统的论文。有新闻推荐的、有商品推荐的。</p><p>新闻推荐是有时效性的，新闻 item 更新迭代很快，会涉及到冷启动的问题，我们使用 content 来解决这个问题。</p><p>商品推荐就不一样，商品是长期性的。在很长一段时间内，商品都会被关注、购买、销售。</p><p>同时也要考虑到区别</p><p>我要买手机，那么应该尽可能推荐各类好的手机；我看到了国足被打败的新闻，我不想继续看下去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科研 </category>
+          
+          <category> 比赛 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> NLP </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Technical Support Q&amp;A</title>
       <link href="/2022/03/18/Technical-Support-Q-A/"/>
       <url>/2022/03/18/Technical-Support-Q-A/</url>
@@ -33,7 +62,7 @@
       <link href="/2022/03/17/Simple-Statistices-Of-Company-Interview-Information/"/>
       <url>/2022/03/17/Simple-Statistices-Of-Company-Interview-Information/</url>
       
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="11acc867d7808320bdacf9c269b7001d2184b0daa95e2a8c755a9c7568630e6f">73efb6a19fe64470c32228f6434b6133506cda7dea18f345879f303750d16d0888933d07188d3bbeb42c60a64d338c1133b6a6d54b4a29091c0f9bd5efb25e71f64e63c8c14e3a4431c27d4afe39aa7d17222a76ad86b3325df8ce4ee91af369520672926e348f28ac4be30871cf0494b941ab108d54d6c68de7711c95d141093a6bfff9477c1cfb034443bd4d2b0b4cb7d19daea99172340e664cc2667b8463b43af06550bd18ee37af7204a4f1e66097e0cc1b9c5167a5b305b4cb3c4d2c0db39688332edd9cdd8b376126e3b069a34f778b324ceb1d8b5f8be0cefd12053f0ce33f10355c9ef20a2c83bbd62f49c4ccebdeff938a4570d7936b83de35d6a30c53136d06bdfddbf99358f4e7f84623dbcf0ebff78ffa548ed48fbbc0cb468533fef7a897308dec82d51af5e07c9b72a9601fbf7edfbccab3f30cc0c17dcdfbc0f04fe4d6f369722f330e5b605dbc7200ab2c82b2ba5e772e32b3c984669482eb5d0d80096930a3b45eb6d1030275665c8cc4b048880ee3d5eaa56c217abadcab6c8524ca06a6400244c24cc28a3ababe2b9603d07d6bd0fd578a5e3e247b2b0cb51b7ffed5c72b98ede2715d086cf6675cf96e014a6d6c80df5d48ca40a423e3418c3f965b3d5f78cdc1f622e20c10bff326be8fdf53964080b4b6d45b09256b6ec256c5f97303a08c06c07a219b96514bf3c2172450524da3b00a5a3c1e16e92ef73ffba2ac0107cdda2651fe1dc46ec91b6c864d00f06c4af266036f7d8740f00b4800a30f54108c1a3a7e31160aae99998360a2b843b2443e7e37624a2db8dba9e98b1e0d5703d3c3aa30dea96da3419ca7402b8eb9284832769ee3905f0acba44c9744533589661ef77be7003d53bec886db287cf4c746ffae8cc42a5440e137704748f628610d628bf63668c76891052f68958bbab8059e1124dee78586ca588430a7a4c03c216ca801e50334c1cb03f64b31f7b424649efd1622802246f5a150b5ab08f79e31915ce010da7f7d4f116a3e95ae1793f38ff10ed3ad6e91a73fc46723d9b23165045db2ff0c9805bf2f443acd54c69587bbdfb816db2cf114211eafb8f4dcce091ce3c99899a3ca970bb26d2b96da979552823b490abcbd17fc80338c6a264602957614cba9c4d590a0ff2e5e5c132431940022ccb2f06f433018410ce6ea4872f1519a0f4e18d7e3cc75474607b3cba76692ab7ee6d54140e2734caa26356741474dd944bf63eb37f740566b37b51e1788ae7eda7b1002181ceb44828dd7bc3f296a26b1c5a21bd229dd869f4e2f46c699a8b01bbcbaf9e8d9183d1dc0770a454bdd953bf78e6b3a66d3012d0e97678c12d7670e0bfdc134de411cb4aeb5c8aff0d61c8b6e2c7b2d9787ebd26335a70fdf5e8b4aae4e9c3118512961518036919b6996af0cb856e0d3191178bf85fdec70b46908918677935beba04833d9c57d642aeefb0fd9c061b140682981486c54229a76b0c33c0e9dd02c4c080267ef8baefef86ac223362aae00c9fd208db998896b7366083687ffbce1ce2c92714001ed6941096c120dc4c28e9db51126ea2dcc937c757348f4cf67ed797c0b4843f8d5a76c26743c16f5075db048f3c04c842f9875f2752bde2bf39735d76dd60934f4716c1852ed417d8e3f03c3ff6708a8f5584312738a82fb86ef9bde349b97814974143feebe41fb1889ad85058a51f5fab3bb851137c1dc12cedd06cfd5505344868844270362e67d60ec97e67082149a89708922ff299dbe7f5d73c38b84054d72a2548ac8438f54bfefa4ef8042880b2e667b77dee9537b8ca3f058cd249c15f24b3ce306d82d1232a6d3d09aaa10140fc8b9e4085281177c60c51427ecddc3128950c0b1b4b0462ff99e1e0a5927b4b7440426a4d4c1000f882675c20db341a9481ca7b263dfa8b72006c0f3d773612de84fbd8569da7f7a25d19c38fa9dc748ccb2f3f4</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">If you are yearned to get access to this essay, please entry cipher. (PS you can try with "Nefelibata")</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="9878302c321f34acf84de365be61746d698ba95b1368f34d00e70bb342b173f8">73efb6a19fe64470c32228f6434b6133506cda7dea18f345879f303750d16d0888933d07188d3bbeb42c60a64d338c1133b6a6d54b4a29091c0f9bd5efb25e71f64e63c8c14e3a4431c27d4afe39aa7d17222a76ad86b3325df8ce4ee91af369520672926e348f28ac4be30871cf0494b941ab108d54d6c68de7711c95d141093a6bfff9477c1cfb034443bd4d2b0b4cb7d19daea99172340e664cc2667b8463b43af06550bd18ee37af7204a4f1e66097e0cc1b9c5167a5b305b4cb3c4d2c0db39688332edd9cdd8b376126e3b069a34f778b324ceb1d8b5f8be0cefd12053f0ce33f10355c9ef20a2c83bbd62f49c4ccebdeff938a4570d7936b83de35d6a30c53136d06bdfddbf99358f4e7f84623dbcf0ebff78ffa548ed48fbbc0cb468533fef7a897308dec82d51af5e07c9b72a9601fbf7edfbccab3f30cc0c17dcdfbc0f04fe4d6f369722f330e5b605dbc7200ab2c82b2ba5e772e32b3c984669482eb5d0d80096930a3b45eb6d1030275665c8cc4b048880ee3d5eaa56c217abadcab6c8524ca06a6400244c24cc28a3ababe2b9603d07d6bd0fd578a5e3e247b2b0cb51b7ffed5c72b98ede2715d086cf6675cf96e014a6d6c80df5d48ca40a423e3418c3f965b3d5f78cdc1f622e20c10bff326be8fdf53964080b4b6d45b09256b6ec256c5f97303a08c06c07a219b96514bf3c2172450524da3b00a5a3c1e16e92ef73ffba2ac0107cdda2651fe1dc46ec91b6c864d00f06c4af266036f7d8740f00b4800a30f54108c1a3a7e31160aae99998360a2b843b2443e7e37624a2db8dba9e98b1e0d5703d3c3aa30dea96d0458d0ed2ebc9d4bc077bbfbedde9dd8e84061b6d3950b5c377b5df066106558f7744ad893521f26f4999d789ebd06e07b2848406aebfbe1e68e3ac235d5b4f790588aa33974e5849f0247b9962ad79570c5647043062002d66a64d653d1922a988f1c5f0bb43941bb5469f952bf752cf8652a48667d2de70aec7099786dffd62c30e5cf7ca6efe65e74d852b98ddce3ff20fa8f1b38023a93bbd6ccd3d7ac21021a00d6afcac090e49bd3d512b4f4b0505555b3f05dee594bea7fbb5c3631e8bd4b1da0ed2c8095a9e85a83e2da3d56c1b7bfb55842aeb565a64a64a7c3b2becab15724cc92e39a8efa970f2a4b72716103b798b9aa963cd63c264e77089d835e1a35be708b70e580cf32b5908a42df0290d99854fbd080ce32cdaac13babda2fd3b6b0a5ad80221f4d121cc7f532e1d48e1f9003337f2b07ede80ddf37f8e77f597cd47595b823c85f3b347aa7367d26d7f10c48faf1e680177a6e1f36eb4f66e1d1fba30343d04622ed4062b3177ccbcaba99340b1a034093d1a671e99899e416f1b53bd62d185c9eec80d1b2896239da1a09a8f3da8aef295d92a9c1be228fa230a6c56f5a60ee02e350344a683d71a72f272119da7c7a14b39f03038bf8ba96195107ad946012ee8ef53c680889716aa612046d05ae188f713f9f36ee8e97d3deec75c32343b5cfe15c4f0f27f150727cad117e03e3b6752189ec949a8a647bf3ce25583da1e52dc374ee3979127d9f815881258427629c81a0d54be22575ab53a50f0c1a52f78dfd61750f3ca26645f0867dd43d6e5a85c052dc91f403300ecb8a2196d24ac8a4bae8f32d90a5d15d8db863b39dba6b634b3a7ec2257a4110fce9652451cc7cefac1a49c5f6a89ffbde2d315639514457d460ad07f5b94b0fc0d84ae7ec07f36c1bc2a5423488d71849ca2554334998edc3699a201d91afc4b28a5e2bc943438f73fe34ca25a33ad51bd1fde2f66bf62953b14429b2911539edbd644e8d987f763aed582e1c4f0710601e9cddd4b92cb81312839a15c7583e14bcd5e91464bfec954a6b75e3e94fcb1af792865d97287ee8ec1bfa36e73cb5005b9b7a660f9ba3a2ae6af9b8e7e7449c6e8f44f774738c3ffde6665672ebeddcd9b8dfd0bb11ce71ed64da258ceed840fd8c24fe1cc3e440b9e6ecea6c4a23c1127807091f678bf1f274dfdbf18d2fef74c890579ecf17ced6b987f7a977ee458f40ad681398ddf3f57ecdde476b783d03b11d0175b6edc1cb011f11338a21434cb4b1e0c97133a44a1e6f4592295a920eda40de97045dc635a785116123af879e6e6b8382e427f7177ccd15a8584c29470744403472fc2e4e95087a07f203866531e63f91c97c15c04aaf22a96a4cbbb7c9941cdca72a273564c67027d2b005bc6d646adc62ef91e0a9aa6bd8b609efa7da7698382c5951feb269727c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">If you are yearned to get access to this essay, please entry cipher. (PS you can try with "Nefelibata")</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       
@@ -237,9 +266,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Java </tag>
             
             <tag> GAN </tag>
             

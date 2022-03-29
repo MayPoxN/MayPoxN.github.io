@@ -1,46 +1,269 @@
-.l_body {
-  display: flex;
-  margin: auto;
-  padding: 0 var(--gap-l);
-  justify-content: center;
-}
-.l_body .l_left {
-  z-index: 8;
-  width: var(--width-left);
-  flex-shrink: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-.l_body .l_main {
-  flex-shrink: 1;
-  flex-grow: 1;
-  width: 320px;
-  max-width: var(--width-main);
-}
-@media screen and (max-width: $device-tablet) {
-  .mobile-only {
-    display: block !important;
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.0.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Miscellaneous talk About the Way of Setting up BLOG - NefelibataのBLOG</title>
+
+  
+    <meta name="description" content="This is an encrypted article and the content is too advanced to be disclosed.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Miscellaneous talk About the Way of Setting up BLOG">
+<meta property="og:url" content="http://example.com/2022/02/25/Miscellaneous-talk-About-the-Way-of-Setting-up-BLOG/index.html">
+<meta property="og:site_name" content="NefelibataのBLOG">
+<meta property="og:description" content="This is an encrypted article and the content is too advanced to be disclosed.">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-02-25T11:41:41.000Z">
+<meta property="article:modified_time" content="2022-03-05T15:20:48.561Z">
+<meta property="article:author" content="MayPoxN">
+<meta property="article:tag" content="BLOG">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="title" href="/"><div class="main">NefelibataのBLOG</div></a></div>
+<nav class="menu dis-select"></nav></header>
+
+<div class="widgets">
+
+
+<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="line"></div><a class="more-item" href="/2022/03/12/Fundamental-knowledge-of-Database-System/"><div class="cap"><time>2022-03-29</time><span>小知识</span></div><span class="title">Fundamental knowledge of Database System</span></a><div class="line"></div><a class="more-item" href="/2022/03/24/Microsoft-News-Recommendation-Competition-Leading-by-Fangzhao-Wu/"><div class="cap"><time>2022-03-25</time><span>科研</span></div><span class="title">Microsoft News Recommendation Competition Leading by Fangzhao Wu</span></a><div class="line"></div><a class="more-item" href="/2022/03/06/get-nothing-to-do-with-but-fall/"><div class="cap"><time>2022-03-25</time></div><span class="title">get nothing to do with but fall</span></a><div class="line"></div><a class="more-item" href="/2022/03/17/Simple-Statistices-Of-Company-Interview-Information/"><div class="cap"><time>2022-03-24</time></div><span class="title">Simple Statistices Of Company Interview Information</span></a><div class="line"></div><a class="more-item" href="/2022/03/18/Technical-Support-Q-A/"><div class="cap"><time>2022-03-19</time><span>小知识</span></div><span class="title">Technical Support Q&A</span></a></div></div>
+
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></div><div id="post-meta">发布于&nbsp;<time datetime="2022-02-25T11:41:41.000Z">2022-02-25</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>Miscellaneous talk About the Way of Setting up BLOG</span></h1>
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="e01bbd3161203a99c05192b8be492899691ead6b45b6c9265c486e997c9858ce">73efb6a19fe64470c32228f6434b6133506cda7dea18f345879f303750d16d08f23f2e112fb27c0e91df327814629dcbaae557cc3cf60fd901ff4093a5521f706986a582cac74c9cb85815e81802da4f2827dcba73721b1514d6d8614c3aadfd07d85564ccfd6a5874485884b76c60f48f7e6516d854b3ad9c2113a68ddb57aef3486d66a13e5df6fc7b4048c8637de0a14766b9345f3aafccea7c43371b11a26447a69f0b28b7b86c00ab945caa1cd64d62f6dfb38e679a4e260a5b696bafba0be427d5c439f060190a4a4a1c3d30f8439b8de24f4b85d3d4042112efe7040696532cf8c1b06e8a75f041f0582857af4ccf849ed879b6023bb84628fcf2937283d6a181371ffc9ac93975e9e6ef8a3267c570d38e05e57ffc397a7ee61197fb1232160257dd48b874633d8774dad686ca1a85a1ca6e99091325965a2f98c36ce541c19585bf91e5106487290e9df14cd6614ece1f830d99971cb678f166d133bb6543ae74531407b963af6fc7bc84ed50ace6c940755aa16d21c5984edfcf544a4d88c28c22d3a99b676e6bcb98f46c4c4934a67e7bc699e1df9fa2f4da2f8d1a77f57cbece1fc9d5ca34d06a9043e111228a13c42258c6a805526d9f484071d1519e267e9e7e8098a6a4c48adbb744ae6c873b732d7ed929809071c5a82a603de4bbe46b12ae29474844ceb260778afee7cf57fccd1a5c6e4ba11863f7e620e2460d92681aca605de3ea0967f9fcdabf16f2294f7d36bc55f46f2e176298c581ec61059fb0d05e4d882eaa7e8c01a9c1017ad39e96bb3f8cb5c528cacb8f2725732b53959d11f05cd4bc28f8be581eeeccc43ce055ef8a1e48043c74d0efc095eb991b986e46ff0462761f4bed18465596296573cc1713a647bb8cac2dfd2a7f91c2befa15efb1c55727fc2866fef426b544c7bd7b486dfaa3c6dc0c658cb36d6338906ff6b480e406672228b92955c53d66452e38676f48493be6e2ae314b3912291a5405f2ad9ddea36dade7528cb7645a6e3c92474a7572aa844d9e91346246b1c1873d98362618273b3004679ed8e2afbb357c61ce3ae24a9883203a791370f532eee44ea71c9e9b523e13e9553bd67cd1162840f32a23ce37e6889c58451e17fde99bad9b6d0e1a495f3cbcd53e86ef449ea2f5b0435ce2afb6fffbfd46c283fc46458203e3b0203229e19010a187d21ad627f31647a4a924fc3946a02d1f347006b2261931eb8f548f694fbba57b73ae6c52bed76e420e124104d7275e0b6ac38caa503504bf30753a8544447b58b677549b88ebc814a0f63441df1c43c1ee6ba3a6dd8424cedb99dc19f62f7c675b27da17c526a15a48eebc49e0458e6cda3bcc3fa3104881670ebae3119c892233a3de161a53f907857e3e1b9d3a1b1c37189bf8379adfb018a5eb05f5210b84169a85e0dec71970f070246896bbd1c50cb0074c12b3c6a636ce56b30c8805fb39c233fc3872491014ecb62125b1ae62062e1b505e946af89bdd6ce79e90f0376509217740f4cac1ba170752e6061fe02a4ea8e62eba67de8d65ce30e7b7209d136e84ef13517fa7f2afb42f035c631c3073dcd86ce4380493fac0ef88aba0caf520cfaa3f96f9e470ae31c98e2cf0f214359041f7be227ca93db9fa6bf2709214d79931cdb31e7285db0890d63ab34fb44132cfcf76ad0bc08c874aca96740b1b09b04570d12c2d58d5c2b41f66e0392af091a58c213070034974afa5135436aa7e6fb4dd7e78c3416ce508393e993508431038354cd28bac171e3ec1b2d5e2723af9168d051584f1e65668de46866839cff25017555cf5fe7de739fb681f8a40bf3d4799e9c1891006521502fc31648a154e69026a16f01e73f178164059cabc937b07a26b9cab02feb1d22393065811f3fb42bd6ccd11308dd600546a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">If you are yearned to get access to this essay, please entry cipher. (PS you can try with "Nefelibata")</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2022/02/25/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A/">开题报告<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2022/03/06/get-nothing-to-do-with-but-fall/">get nothing to do with but fall<span class="note">较新</span></a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="http://example.com/">@MayPoxN</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.6.1" title="v1.6.1">Stellar</a> 作为主题。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.6.1';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
   }
-  .l_body {
-    padding: 0;
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
   }
-  .l_body .l_left {
-    position: fixed;
-    transform: translateX(-320px);
-    margin: 0;
-    left: 0;
-    background: var(--site-bg);
-    box-shadow: $boxshadow-card-float;
-    z-index: 9;
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
-  .l_body .l_main {
-    max-width: 100%;
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
   }
-  .l_body.mobile .l_left {
-    transition: transform 0.3s ease-out;
-  }
-  .l_body.mobile.sidebar .l_left {
-    transform: translateX(0px);
-  }
-}
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

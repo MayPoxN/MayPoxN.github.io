@@ -28,7 +28,7 @@
 <meta property="og:description" content="一、虚函数的数据结构及工作原理虚函数：用 virtual 定义的函数。 虚函数的来源：基于 C++ 可以将子类转换为父类的特性。 1234567CBsaic		*parent;CBasic		*p1;CChildren	*child;parent &#x3D; new CBasic;child &#x3D; new CChildren;p1 &#x3D; new CChildren;  p1 是 CBsaic 类型的指针，但实">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-11T12:58:02.000Z">
-<meta property="article:modified_time" content="2022-03-13T17:10:48.472Z">
+<meta property="article:modified_time" content="2022-03-31T13:54:04.859Z">
 <meta property="article:author" content="MayPoxN">
 <meta property="article:tag" content="C&#x2F;C++">
 <meta name="twitter:card" content="summary">
@@ -169,7 +169,7 @@
 <h2 id="2、全局静态变量：STATIC-全局变量和普通全局变量的区别？"><a href="#2、全局静态变量：STATIC-全局变量和普通全局变量的区别？" class="headerlink" title="2、全局静态变量：STATIC 全局变量和普通全局变量的区别？"></a>2、全局静态变量：STATIC 全局变量和普通全局变量的区别？</h2><ul>
 <li>全局变量用 STATIC 修饰就构成了静态的全局变量。</li>
 <li>全局变量和静态的全局变量都是静态存储方式。</li>
-<li>（非静态）全局变量的作用域是整个源程序，可以跨文件作用。</li>
+<li>（<strong>非静态）全局变量的作用域是整个源程序，可以跨文件作用。</strong></li>
 <li><strong>静态的全局变量则只在定义该变量的源文件内有效</strong>，只能被该源文件内的函数公用，不可以跨文件。这一特点可以避免在其他源文件中引起错误。</li>
 </ul>
 <h2 id="3、静态成员函数：STATIC-函数与普通函数的区别？"><a href="#3、静态成员函数：STATIC-函数与普通函数的区别？" class="headerlink" title="3、静态成员函数：STATIC 函数与普通函数的区别？"></a>3、静态成员函数：STATIC 函数与普通函数的区别？</h2><ul>
@@ -195,39 +195,47 @@
 <h1 id="十四、new-与-malloc"><a href="#十四、new-与-malloc" class="headerlink" title="十四、new 与 malloc"></a>十四、new 与 malloc</h1><ol>
 <li>属性：new 是关键字；malloc 是库函数，需要头文件支持。</li>
 <li>参数：new 申请内存无需指定大小，编译器会自行计算；malloc 则需要我们给出。（常用sizeof函数）</li>
-<li>返回类型：new 分配成功返回的是对象类型的指针，和对象严格匹配并不需要类型转换，因此 new 操作是安全的；malloc返回的则是void*。</li>
-<li>分配失败：new 分配失败则会抛出 bad_alloc 异常；malloc 则会返回NULL。</li>
+<li>返回类型：new 分配成功返回的是对象类型的指针，和对象严格匹配并不需要类型转换，<strong>因此 new 操作是安全的；malloc返回的则是void*。</strong></li>
+<li>分配失败：<strong>new 分配失败则会抛出 bad_alloc 异常；malloc 则会返回NULL。</strong></li>
 <li>重载。</li>
-<li>内存区域：new 分配的内存在自由存储区；malloc 则在堆上分配内存。</li>
+<li>内存区域：<strong>new 分配的内存在自由存储区；malloc 则在堆上分配内存。</strong></li>
 </ol>
 <h1 id="十五、C-类型转换"><a href="#十五、C-类型转换" class="headerlink" title="十五、C++ 类型转换"></a>十五、C++ 类型转换</h1><ol>
-<li>static_cast</li>
-<li>dynamic_cast</li>
-<li>const_cast</li>
-<li>reinterpret_cast</li>
+<li><p>static_cast</p>
+<p>最安全的转换、就像默认的转换一样</p>
+</li>
+<li><p>dynamic_cast</p>
+<p>类的继承转换</p>
+</li>
+<li><p>const_cast</p>
+<p>const转换</p>
+</li>
+<li><p>reinterpret_cast</p>
+<p>直接二进制重理解，最暴力，最危险的</p>
+</li>
 </ol>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="comment">//using namespace std;</span></span><br><span class="line"><span class="comment">//static_cast&lt;typeid&gt;（）其中typeid可以为一般类型，也可以为指针引用</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// 构造函数初始化列表</span></span><br><span class="line">    <span class="comment">// http://c.biancheng.net/view/2223.html</span></span><br><span class="line">	<span class="built_in">A</span>() :<span class="built_in">i</span>(<span class="number">1</span>), <span class="built_in">j</span>(<span class="number">1</span>) &#123;&#125;</span><br><span class="line">	~<span class="built_in">A</span>() &#123;&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">printA</span><span class="params">()</span></span>&#123;</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;call printA() in class A&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">printSum</span><span class="params">()</span></span>&#123;</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;Sum = &quot;</span> &lt;&lt; i + j &lt;&lt; std::endl;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="type">int</span>  i, j;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span> :<span class="keyword">public</span> A&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">B</span>():<span class="built_in">a</span>(<span class="number">2</span>),<span class="built_in">b</span>(<span class="number">3</span>)&#123;&#125;</span><br><span class="line">	~<span class="built_in">B</span>()&#123;&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">printB</span><span class="params">()</span></span>&#123;</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;call printB() in class B&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">printSum</span><span class="params">()</span></span>&#123;</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;Sum = &quot;</span> &lt;&lt; a + b &lt;&lt; std::endl;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">Add</span><span class="params">()</span></span>&#123;</span><br><span class="line">		a++;</span><br><span class="line">		b++;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="type">double</span> a, b;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	B *ptrB = <span class="keyword">new</span> B;          <span class="comment">//创建一个B类型对象。堆区</span></span><br><span class="line">	ptrB-&gt;<span class="built_in">printSum</span>();         <span class="comment">//输出和</span></span><br><span class="line"></span><br><span class="line">	A *ptrA = <span class="built_in">static_cast</span>&lt;A*&gt;(ptrB);  <span class="comment">//将派生类转化成父类，上行转换</span></span><br><span class="line">	ptrA-&gt;<span class="built_in">printA</span>();</span><br><span class="line">	ptrA-&gt;<span class="built_in">printSum</span>();</span><br><span class="line"></span><br><span class="line">	ptrA = <span class="keyword">new</span> A;                 <span class="comment">//创建一个父类对象</span></span><br><span class="line">	ptrB = <span class="built_in">static_cast</span>&lt;B*&gt;(ptrA); <span class="comment">//将父类对象转换成子类对象，下行转换</span></span><br><span class="line">	ptrB-&gt;<span class="built_in">printB</span>();</span><br><span class="line">	ptrB-&gt;<span class="built_in">printSum</span>();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	B b;                         <span class="comment">//栈上创建一个B类型对象</span></span><br><span class="line">	B &amp;rB = b;                   <span class="comment">//对b的引用</span></span><br><span class="line">	rB.<span class="built_in">printSum</span>();</span><br><span class="line">	A &amp;rA = <span class="built_in">static_cast</span>&lt;A &amp;&gt;(b); <span class="comment">//派生类转换成基类，上行转换</span></span><br><span class="line">	rA.<span class="built_in">printA</span>();</span><br><span class="line">	rA.<span class="built_in">printSum</span>();</span><br><span class="line"></span><br><span class="line">	A a;</span><br><span class="line">	A &amp;rA1 = a;</span><br><span class="line">	rA1.<span class="built_in">printA</span>();</span><br><span class="line">	B &amp;rB1 = <span class="built_in">static_cast</span>&lt;B &amp;&gt;(a); <span class="comment">//将基类转换成派生类，下行转换</span></span><br><span class="line">	rB1.<span class="built_in">printB</span>();</span><br><span class="line">	rB1.<span class="built_in">printSum</span>();</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="十六、面向对象"><a href="#十六、面向对象" class="headerlink" title="十六、面向对象"></a>十六、面向对象</h1><h2 id="1、面向对象"><a href="#1、面向对象" class="headerlink" title="1、面向对象"></a>1、面向对象</h2><p>面向对象把数据和对数据的操作方法放在一起，作为一个相互依靠的整体，称之为对象。对同类对象抽象出共同特效，类中大多数数据只能用本类的方法进行处理。</p>
 <h2 id="2、面向对象三大特性"><a href="#2、面向对象三大特性" class="headerlink" title="2、面向对象三大特性"></a>2、面向对象三大特性</h2><ol>
-<li>封装：将一类事物的属性和行为抽象为一个类，使属性私有化、行为公开化，提高数据隐蔽性，复用性高。</li>
-<li>继承：进一步将属性和行为抽象为一个父类，而每一个子类拥有父类的行为和属性，也有自己的行为和属性。</li>
-<li>多态：<a target="_blank" rel="noopener" href="https://www.runoob.com/cplusplus/cpp-polymorphism.html">接口复用。</a>当类之间存在层次结构，并且类之间是通过继承关联时，就会用到多态。</li>
+<li><strong>封装</strong>：将一类事物的属性和行为抽象为一个类，使属性私有化、行为公开化，提高数据隐蔽性，复用性高。</li>
+<li><strong>继承</strong>：进一步将属性和行为抽象为一个父类，而每一个子类拥有父类的行为和属性，也有自己的行为和属性。</li>
+<li><strong>多态</strong>：<a target="_blank" rel="noopener" href="https://www.runoob.com/cplusplus/cpp-polymorphism.html">接口复用。</a>当类之间存在层次结构，并且类之间是通过继承关联时，就会用到多态。</li>
 </ol>
 <p>这里涉及到 virtual 修饰符。例如父类是形状，有面积方法；父类派生出三角形和四边形两个子类，这两个子类的面积方法不一样，各有各的。这就是多态。</p>
 <h1 id="十七、前置与后置"><a href="#十七、前置与后置" class="headerlink" title="十七、前置与后置"></a>十七、前置与后置</h1><ul>
 <li>前置 ++ 的实现比较高效，自增之后直接返回 *this 指针即可。</li>
-<li>后置 ++ 实现比较麻烦，需要返回自增之前的对象。需要先将对象拷贝一份，然后再自增，最后返回那个拷贝。</li>
+<li>后置 ++ 实现比较麻烦，需要返回自增之前的对象。<strong>需要先将对象拷贝一份，然后再自增，最后返回那个拷贝。</strong></li>
 </ul>
 <h1 id="十八、静态库和动态库"><a href="#十八、静态库和动态库" class="headerlink" title="十八、静态库和动态库"></a>十八、静态库和动态库</h1><p>静态库：</p>
 <ol>
 <li>链接时将函数放进可执行的程序中</li>
 <li>可以产生多个副本</li>
-<li>不依赖程序运行</li>
+<li><strong>不依赖程序运行</strong></li>
 </ol>
 <p>动态库：</p>
 <ol>
-<li>程序运行后在加载时才会去动态库找函数</li>
+<li>程序运行后在<strong>加载时才会去动态库找函数</strong></li>
 <li>多线程共享</li>
 <li>依赖程序运行</li>
 </ol>
@@ -272,7 +280,7 @@
 <li>C++ 调用 C 动态链接库：需要加上 extern C，用 C 编译准则来编译。</li>
 </ul>
 <h1 id="二十七、结构体"><a href="#二十七、结构体" class="headerlink" title="二十七、结构体"></a>二十七、结构体</h1><ul>
-<li>C++中：结构体可以通过重载操作符 “&#x3D;&#x3D;” 来进行结构体的比较，但要注意内存对齐。为了提高 CPU 效率，通常用宏定义来改变内存对齐方式。</li>
+<li>C++中：结构体可以<strong>通过重载操作符 “&#x3D;&#x3D;” 来进行结构体的比较，但要注意内存对齐。</strong>为了提高 CPU 效率，通常用宏定义来改变内存对齐方式。</li>
 <li>C中：结构体无法比较，且因为内存对齐，空白部分会有垃圾填充造成干扰。</li>
 </ul>
 <h1 id="二十八、拷贝构造函数为什么传递引用——-未完成"><a href="#二十八、拷贝构造函数为什么传递引用——-未完成" class="headerlink" title="二十八、拷贝构造函数为什么传递引用——[未完成]"></a>二十八、拷贝构造函数为什么传递引用——[未完成]</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/chio/archive/2007/09/14/893299.html">原因</a>：参数为引用，不传递值是为了防止拷贝构造函数的无限递归，这会导致栈溢出。这也是编译器的强制要求。</p>

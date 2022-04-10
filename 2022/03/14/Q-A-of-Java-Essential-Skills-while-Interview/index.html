@@ -17,97 +17,22 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
-  <title>Q&A of Java Essential Skills while Interview - NefelibataのBLOG</title>
+  <title>Q&A of Java Essential Skills while Interview - Nefelibata</title>
 
   
-    <meta name="description" content="JavaInterview    基础篇 1、 Java语言有哪些特点 2、面向对象和面向过程的区别 3 、八种基本数据类型的大小，以及他们的封装类 4、标识符的命名规则。 5、instanceof 关键字的作用 6、Java自动装箱与拆箱 7、 重载和重写的区别 8、 equals与&#x3D;&#x3D;的区别 9、 Hashcode的作用 10、String、String StringBuf">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Q&amp;A of Java Essential Skills while Interview">
-<meta property="og:url" content="http://example.com/2022/03/14/Q-A-of-Java-Essential-Skills-while-Interview/index.html">
-<meta property="og:site_name" content="NefelibataのBLOG">
-<meta property="og:description" content="JavaInterview    基础篇 1、 Java语言有哪些特点 2、面向对象和面向过程的区别 3 、八种基本数据类型的大小，以及他们的封装类 4、标识符的命名规则。 5、instanceof 关键字的作用 6、Java自动装箱与拆箱 7、 重载和重写的区别 8、 equals与&#x3D;&#x3D;的区别 9、 Hashcode的作用 10、String、String StringBuf">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190618162826310.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTk0MDIwNg==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190618162853995.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTk0MDIwNg==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190618163143146.png">
-<meta property="og:image" content="https://camo.githubusercontent.com/639ec442b39898de071c3e4fd098215fb48f11e9/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f494f2d2545362539332538442545342542442539432545362539362542392545352542432538462545352538382538362545372542312542422e706e67">
-<meta property="og:image" content="https://camo.githubusercontent.com/4a44e49ab13eacac26cbb0e481db73d6d11181b7/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f494f2d2545362539332538442545342542442539432545352541462542392545382542312541312545352538382538362545372542312542422e706e67">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190529100157416.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmd6aGVuOTE=,size_14,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190529100559473.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmd6aGVuOTE=,size_12,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190529100616206.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190529100641220.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmd6aGVuOTE=,size_12,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2019052910075352.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmd6aGVuOTE=,size_10,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190529100824512.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190529101222648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmd6aGVuOTE=,size_10,color_FFFFFF,t_70">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5321750-7153edcd60982fbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/960/format/webp">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5321750-f75d9f191907ddda.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/746/format/webp">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5321750-aa60ae3b9225d09f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/606/format/webp">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5321750-9e4c27ecdfee3d58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/573/format/webp">
-<meta property="og:image" content="https://camo.githubusercontent.com/3d08568d6d5e8bf0b13e737e99a68206fa724808/687474703a2f2f7374617469632e7a7962756c756f2e636f6d2f686f6d6973732f3030327a6f347a61643369393770366935617878313473782f696d6167655f31626c39743671366c6162306f6b6f666f7631756d7637637431332e706e67">
-<meta property="og:image" content="https://camo.githubusercontent.com/e2722f0655be7b02c6f8b128e3675c14e9c0c013/687474703a2f2f7374617469632e7a7962756c756f2e636f6d2f686f6d6973732f737936663436726165787437676c6179673832776274786e2f696d6167655f31626c39743167656731356c6a35387034316b643135316b3639392e706e67">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/1/16/16fad2ca79ea1cb7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/1/16/16fad2da823043f8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://pics7.baidu.com/feed/9922720e0cf3d7caf8b227aecb7be60c6a63a90f.png?token=5bc0a1783459586fb4e21b13579950c9&s=B8A05D32150F65491865D0420300F0F1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/26/166add616a292bcf?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/26/166add6169fc206d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/30/166c4a5baac923e9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/30/166c4a5baa9ca5e9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://camo.githubusercontent.com/3b07a520440ff631990c027c2437d131fba25efe/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f352f32322f313633383739303365653732633833313f773d37303926683d353626663d706e6726733d34363733">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/249993/201612/249993-20161212142542042-2117679195.jpg">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/249993/201702/249993-20170207135959401-404841652.png">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/249993/201702/249993-20170207140151791-1932120070.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190314152153622.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0tldmluX0d1Ng==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190314152237524.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190314152303517.png">
-<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/KLTiaLuJImELSYlz43K7eJXnVZcbNPt3h4P9rx8JicF7vYPt1sP52ibXeUqd5sibRSzDaMGM75r0M4ibOW0yIoSrRxA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
-<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/KLTiaLuJImELSYlz43K7eJXnVZcbNPt3hZtKfFL4LrGXbHEgRiafCzqq1E4s3x0iaj26fziavAkvLkLwKU5CLsM4icQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
-<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/KLTiaLuJImELSYlz43K7eJXnVZcbNPt3hNKv6hhyicgxUSGYmxeRrPZX1rbvzomiaWNIZOHxEF3ibp6Kqm3eAwv8DQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
-<meta property="og:image" content="https://camo.githubusercontent.com/34b24ff87145208403dce01554932f05bbe3f167/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f6d7973716c2d656e67696e65732e706e67">
-<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/1583307481617.png">
-<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/1583308353521.png">
-<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOS8yLzE5LzE2OTA0NTk2YjIxZTIwOWM?x-oss-process=image/format,png">
-<meta property="og:image" content="https://oscimg.oschina.net/oscnet/a3e7daec2343b9188bfd745b7dfe0a93693.jpg">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13449584-395cfbeb00163ce1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/550/format/webp">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13449584-60c5493aac0e15f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/550/format/webp">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13449584-de1285a695fb6e50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/550/format/webp">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13449584-b52c979e802d20c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/550/format/webp">
-<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/1583476168205.png">
-<meta property="og:image" content="https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/UtWdDgynLdYJzfyu1L8rI8asia8NkuKt5X9ZBNgaawiaFg1KEAwZaibXuichhPNgHTZRqXLicd2avQzMMxOTc2mBDXA/640?">
-<meta property="og:image" content="https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/UtWdDgynLdYJzfyu1L8rI8asia8NkuKt5RiajKOy5hzmpA2NxqZBqakbyVj7QtricyBia1MEgtMOkzoiaF7Z1sFc1hg/640?">
-<meta property="og:image" content="https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/UtWdDgynLdYJzfyu1L8rI8asia8NkuKt5vXdia1RicjhSpzVkvmOuHDVRWMcljQh60Z90cmLHFQ4Md8cJq4Kn0thg/640?">
-<meta property="og:image" content="https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/UtWdDgynLdYJzfyu1L8rI8asia8NkuKt5EGFQBBLqOG2wMNh27CPcndwibeMrRaQsU9q553ZkwsQaB7SNtr8aibJw/640?">
-<meta property="og:image" content="https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/UtWdDgynLdYJzfyu1L8rI8asia8NkuKt5UOLvTTtAFI04Dbicmz7Cb23rjVwTia9bJicPYkhB7lSKUAO7YOzmXwE8A/640?">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/1/13/16f9f49d3f005e23?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/1583479010214.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181224153229925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xldHR5aXNtZQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181224153636584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xldHR5aXNtZQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181224153717396.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xldHR5aXNtZQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/25/16f3cd47d11e0d11?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/25/16f3cd47d2b0df73?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/25/16f3cd48799304d6?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/26/16f4126064267b88?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/26/16f412606724edeb?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/26/16f41260671abdb0?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/26/16f4126066ec7ccf?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/26/16f4126066d9e378?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/26/16f412606760af54?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-array.png">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-stack.png">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-queue.png">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-linked_list.png">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-graph.png">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-tree.png">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-tries.png">
-<meta property="og:image" content="https://image.fundebug.com/2019-03-27-hash_table.png">
-<meta property="article:published_time" content="2022-03-14T07:38:00.000Z">
-<meta property="article:modified_time" content="2022-03-14T07:46:17.208Z">
-<meta property="article:author" content="MayPoxN">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="Spring">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190618162826310.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTk0MDIwNg==,size_16,color_FFFFFF,t_70">
-  
-  
+  <meta name="description" content="JavaInterview
+
+
+
+基础篇
+1、 Java语言有哪些特点
+2、面向对象和面向过程的区别
+3 、八种基本数据类型的大小，以及他们的封装类
+4、标识符的命名规则。
+5、instanceof 关键字的作用
+6、Java自动装箱与拆箱
+7、 重载和重写的区别
+8、 equals与&#x3...">
 
   <!-- feed -->
   
@@ -134,8 +59,8 @@
 
 <header class="header">
 
-<div class="logo-wrap"><a class="title" href="/"><div class="main">NefelibataのBLOG</div></a></div>
-<nav class="menu dis-select"></nav></header>
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Nefelibata</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/more/">更多</a></nav></header>
 
 <div class="widgets">
 

@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>My Dissertation</title>
+      <link href="/2022/04/19/My-Dissertation/"/>
+      <url>/2022/04/19/My-Dissertation/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="c5a57dfb2a5c165e00d3371134948f558696518b27a6b13b610cc8613de9c930">73efb6a19fe64470c32228f6434b613391152c5245197f73c632eeb14e324a1555ef45ee32f5512c3f73079c7fbe77bf911f91b7041973d1d0435cb825ca790aef7cbbbaca372a411cb88766427f1c81</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">If you are yearned to get access to this essay, please entry cipher. (PS you can try with "Nefelibata")</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ACG StyleGAN</title>
       <link href="/2022/04/11/ACG-StyleGAN/"/>
       <url>/2022/04/11/ACG-StyleGAN/</url>
@@ -50,7 +63,7 @@
       <link href="/2022/03/24/Microsoft-News-Recommendation-Competition-Leading-by-Fangzhao-Wu/"/>
       <url>/2022/03/24/Microsoft-News-Recommendation-Competition-Leading-by-Fangzhao-Wu/</url>
       
-        <content type="html"><![CDATA[<h1 id="组会1——2022-x2F-03-x2F-24"><a href="#组会1——2022-x2F-03-x2F-24" class="headerlink" title="组会1——2022&#x2F;03&#x2F;24"></a>组会1——2022&#x2F;03&#x2F;24</h1><p>吴方照老师带领的推荐系统比赛 <a href="https://msnews.github.io/">MIND</a> 。</p><p>MIND数据集开源了、也有很多论文、有很多开源代码。</p><p>我们主要推荐 item，可能是视频，音乐，商品等等。</p><p>根据人预测我们会需要什么，从而进行推荐。因此不用搜索，匹配item和人。</p><p>例如人和新闻、人和视频、人和商品。</p><p>系统会决定哪些东西你能看到、哪些东西你优先看到。推荐系统权力也很大，会对社会产生影响。并非用户点的更多更好。</p><p>实现人和新闻的匹配。</p><ol><li>知道人是什么样的人。<ul><li>他喜欢什么</li><li>他有什么兴趣</li><li>他的特征</li></ul></li><li>要知道待推荐的是什么。<ul><li>对 item 的分类</li><li>NLP 语义理解</li><li>item 之间的匹配</li></ul></li><li>算法搜寻用户信息。<ul><li>用 vector 表示</li><li>内容也是 vector</li></ul></li></ol><p>可以在 MIND 看一下推荐系统的论文。有新闻推荐的、有商品推荐的。</p><p>新闻推荐是有时效性的，新闻 item 更新迭代很快，会涉及到冷启动的问题，我们使用 content 来解决这个问题。</p><p>商品推荐就不一样，商品是长期性的。在很长一段时间内，商品都会被关注、购买、销售。</p><p>同时也要考虑到区别</p><p>我要买手机，那么应该尽可能推荐各类好的手机；我看到了国足被打败的新闻，我不想继续看下去。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="组会1——2022-x2F-03-x2F-24"><a href="#组会1——2022-x2F-03-x2F-24" class="headerlink" title="组会1——2022&#x2F;03&#x2F;24"></a>组会1——2022&#x2F;03&#x2F;24</h1><p>吴方照老师带领的推荐系统比赛 <a href="https://msnews.github.io/">MIND</a> 。</p><p>MIND数据集开源了、也有很多论文、有很多开源代码。</p><p>我们主要推荐 item，可能是视频，音乐，商品等等。</p><p>根据人预测我们会需要什么，从而进行推荐。因此不用搜索，匹配item和人。</p><p>例如人和新闻、人和视频、人和商品。</p><p>系统会决定哪些东西你能看到、哪些东西你优先看到。推荐系统权力也很大，会对社会产生影响。并非用户点的更多更好。</p><p>实现人和新闻的匹配。</p><ol><li>知道人是什么样的人。<ul><li>他喜欢什么</li><li>他有什么兴趣</li><li>他的特征</li></ul></li><li>要知道待推荐的是什么。<ul><li>对 item 的分类</li><li>NLP 语义理解</li><li>item 之间的匹配</li></ul></li><li>算法搜寻用户信息。<ul><li>用 vector 表示</li><li>内容也是 vector</li></ul></li></ol><p>可以在 MIND 看一下推荐系统的论文。有新闻推荐的、有商品推荐的。</p><p>新闻推荐是有时效性的，新闻 item 更新迭代很快，会涉及到冷启动的问题，我们使用 content 来解决这个问题。</p><p>商品推荐就不一样，商品是长期性的。在很长一段时间内，商品都会被关注、购买、销售。</p><p>同时也要考虑到区别</p><p>我要买手机，那么应该尽可能推荐各类好的手机；我看到了国足被打败的新闻，我不想继续看下去。</p><h1 id="组会2——错过了，时间未知。推测是04-x2F-20前一周的周三"><a href="#组会2——错过了，时间未知。推测是04-x2F-20前一周的周三" class="headerlink" title="组会2——错过了，时间未知。推测是04&#x2F;20前一周的周三"></a>组会2——错过了，时间未知。推测是04&#x2F;20前一周的周三</h1><p>该次组会进行了<strong>疑难解答</strong></p>]]></content>
       
       
       <categories>
